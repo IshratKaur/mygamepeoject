@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystic Match</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="levelDifficulty" class="header-item">Difficulty: <span id="currentDifficulty">Easy</span></div>
+        <h1 class="header-item">Mystic Match</h1>
+        <div class="header-item">
+            Moves: <span id="moveCounter">0</span>, Time: <span id="timeCounter">0:00</span>, Score: <span id="scoreDisplay">0</span>
+        </div>
+    </header>
+    
+    <main>
+        <section id="gameBoard" class="game-board">
+            <!-- Cards will be dynamically inserted here -->
+        </section>
+
+        <section id="gameControls" class="game-controls">
+            <button id="startGame">Start Game</button>
+            <button id="pauseGame">Pause</button>
+            <button id="resetGame">Reset</button>
+            <select id="difficultySelector">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </section>
+
+        <section id="specialPowers" class="special-powers">
+            <button id="visionOfForesight">Vision of Foresight</button>
+            <button id="timeWarp">Time Warp</button>
+            <button id="shadowSwap">Shadow Swap</button>
+        </section>
+    </main>
+
+    <footer>
+        <button id="howToPlay">How to Play</button>
+        <button id="viewLeaderboards">Leaderboards</button>
+        <button id="viewAchievements">Achievements</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
