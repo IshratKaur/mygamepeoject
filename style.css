@@ -1,0 +1,100 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #282c34;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header, footer {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-item, footer button {
+    margin: 5px;
+    text-align: center;
+}
+
+h1 {
+    color: #78c2ad;
+}
+
+/* Game Board */
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* This can be dynamically adjusted based on difficulty */
+    gap: 15px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Game Controls & Special Powers */
+#gameControls, #specialPowers {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button, select {
+    background-color: #6272a4;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover, select:hover {
+    background-color: #78c2ad;
+}
+
+/* Special Powers Section */
+.special-powers button {
+    background-color: #ff79c6;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header, footer, #gameBoard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-item, footer button {
+        margin: 10px 0;
+    }
+
+    #gameBoard {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #gameControls, #specialPowers {
+        flex-direction: column;
+    }
+}
+
